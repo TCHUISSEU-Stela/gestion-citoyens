@@ -6,6 +6,7 @@ import { FooterComponent } from './layouts/footer/footer.component';
 import { HeaderComponent } from './layouts/header/header.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { LoginComponent } from './auth/login/login.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { LoginComponent } from './auth/login/login.component';
     HeaderComponent,
     RegisterComponent,
     LoginComponent,
+    SidebarComponent,
   ],
   imports: [CommonModule, CoreRoutingModule],
   exports: [HeaderComponent, FooterComponent],

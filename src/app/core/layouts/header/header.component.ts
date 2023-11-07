@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Sidebar } from '../../nav/nav-sidebar';
+import { SidebarInterface } from '../../interfaces/interfaces-modes';
 
 @Component({
      selector: 'app-header',
@@ -7,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
      isToggleSidebar!: boolean;
+     navSidebar: SidebarInterface[] = Sidebar;
 
      ngOnInit(): void {
           this.isToggleSidebar = false;
